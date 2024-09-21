@@ -1,0 +1,8 @@
+[submodule "gem5"]
+    path = gem5
+    url = git@github.com:studyztp/gem5.git
+    branch = studyztp/looppoint-analysis-stable
+[submodule "gem5-resources"]
+    path = gem5-resources
+    url = git@github.com:studyztp/gem5-resources.git
+    branch = looppoint-use-disk
