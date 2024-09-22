@@ -2,8 +2,8 @@
 
 from typing import Type
 
-from sky_components.branch_pred import LTAGE_BP
-from sky_components.skylake_core import SkyLakeStdCore
+from .branch_pred import LTAGE_BP
+from .skylake_core import SkyLakeStdCore
 
 from m5.objects import (
     BranchPredictor,

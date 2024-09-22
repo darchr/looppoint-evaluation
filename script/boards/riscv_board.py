@@ -1,8 +1,8 @@
 from m5.objects.DRAMInterface import DDR4_2400_16x4
 from gem5.components.memory.memory import ChanneledMemory
-from gem5.components.riscv_board import RiscvBoard
-from gem5.components.cachehierarchies.ruby.mesi_two_level import MESITwoLevelCacheHierarchy
-from gem5.components.cache_hierarchies.classic.no_cache import NoCache
+from gem5.components.boards.riscv_board import RiscvBoard
+from gem5.components.cachehierarchies.ruby.mesi_two_level_cache_hierarchy import MESITwoLevelCacheHierarchy
+from gem5.components.cachehierarchies.classic.no_cache import NoCache
 from gem5.components.processors.simple_processor import SimpleProcessor
 from gem5.isas import ISA
 from gem5.components.processors.cpu_types import CPUTypes
@@ -46,20 +46,3 @@ def get_functional_board():
         memory=memory,
     )
     return system
-
-def get_KVM_board():
-    processor = SimpleProcessor(
-        cpu_type=CPUTypes.KVM,
-        isa=ISA.RISCV,
-        num_cores=8
-    )
-    cache = NoCache()
-    memory = ChanneledMemory(DDR4_2400_16x4, 1, 128, size="8GiB")
-    system = RiscvBoard(
-        clk_freq="2GHz",
-        processor=processor,
-        cache_hierarchy=cache,
-        memory=memory,
-    )
-    return system
-

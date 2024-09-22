@@ -1,15 +1,15 @@
 from m5.objects.DRAMInterface import DDR4_2400_16x4
 from gem5.components.memory.memory import ChanneledMemory
-from gem5.components.x86_board import X86Board
-from gem5.components.cachehierarchies.ruby.mesi_three_level import MESIThreeLevelCacheHierarchy
-from x86_board_components.sky_components.skylakeCPU import SkylakeCPU
-from gem5.components.cache_hierarchies.classic.no_cache import NoCache
+from gem5.components.boards.x86_board import X86Board
+from gem5.components.cachehierarchies.ruby.mesi_three_level_cache_hierarchy import MESIThreeLevelCacheHierarchy
+from script.boards.x86_board_components.sky_components.skylakeCPU import SkyLakeCPU
+from gem5.components.cachehierarchies.classic.no_cache import NoCache
 from gem5.components.processors.simple_processor import SimpleProcessor
 from gem5.isas import ISA
 from gem5.components.processors.cpu_types import CPUTypes
 
 def get_x86_board():
-    processor = SkylakeCPU(num_cores=8)
+    processor = SkyLakeCPU(num_cores=8)
     memory = ChanneledMemory(DDR4_2400_16x4, 2, 128, size="3GiB")
     cache = MESIThreeLevelCacheHierarchy(
         l1i_size="32KiB",

@@ -29,7 +29,7 @@
 
 from typing import Type
 
-from sky_components.branch_pred import LTAGE_BP
+from .branch_pred import LTAGE_BP
 
 from m5.objects import (
     BranchPredictor,
