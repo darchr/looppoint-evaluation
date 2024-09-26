@@ -9,8 +9,8 @@ from gem5.components.boards.abstract_board import AbstractBoard
 from gem5.utils.override import overrides
 
 from ..modifier import Modifier
-
-from .cmn import CoherentMeshNetwork
+from script.boards.arm_board_components.components.cmn import CoherentMeshNetwork
+# from .cmn import CoherentMeshNetwork
 
 
 class CMNModifier(Modifier):

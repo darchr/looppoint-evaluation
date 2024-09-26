@@ -20,7 +20,7 @@ def get_arm_npb_workload(workload_name = None, class_size = None, obtain_process
     if workload_name is not None:
         workload.set_parameter("readfile_contents", f"LD_LIBRARY_PATH=/home/gem5/NPB3.4-OMP/common/aarch64-unknown-linux-gnu OMP_NUM_THREADS=8 /home/gem5/NPB3.4-OMP/{workload_name.upper()}/{class_size}/c_m5_fs_naive/aarch64/*.c_m5_fs_naive;")
         if start_from_workload_checkpoint:
-            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"arm-{workload_name}-{class_size}-cpt"))
+            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"workload-cpts/arm-{workload_name}-{class_size}-cpt"))
     if obtain_process_maps:
         workload.set_parameter("readfile_contents",
 f"""#!/bin/bash
@@ -68,7 +68,7 @@ def get_x86_npb_workload(workload_name = None, class_size = None, obtain_process
     if workload_name is not None:
         workload.set_parameter("readfile_contents", f"LD_LIBRARY_PATH=/home/gem5/NPB3.4-OMP/common/x86_64-unknown-linux-gnu OMP_NUM_THREADS=8 /home/gem5/NPB3.4-OMP/{workload_name.upper()}/{class_size}/c_m5_fs_naive/x86_64/*.c_m5_fs_naive;")
         if start_from_workload_checkpoint:
-            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"x86-{workload_name}-{class_size}-cpt"))
+            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"workload-cpts/x86-{workload_name}-{class_size}-cpt"))
     if obtain_process_maps:
         workload.set_parameter("readfile_contents", 
 f"""#!/bin/bash
@@ -111,7 +111,7 @@ def get_riscv_npb_workload(workload_name = None, class_size = None, obtain_proce
     if workload_name is not None:
         workload.set_parameter("readfile_contents", f"LD_LIBRARY_PATH=/home/gem5/NPB3.4-OMP/common/riscv64-unknown-linux-gnu OMP_NUM_THREADS=8 /home/gem5/NPB3.4-OMP/{workload_name.upper()}/{class_size}/c_m5_fs_naive/riscv64/*.c_m5_fs_naive;")
         if start_from_workload_checkpoint:
-            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"riscv-{workload_name}-{class_size}-cpt"))
+            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"workload-cpts/riscv-{workload_name}-{class_size}-cpt"))
     if obtain_process_maps:
         workload.set_parameter("readfile_contents", 
 f"""#!/bin/bash
