@@ -51,6 +51,9 @@ elif args.arch == "x86":
 output_path = Path(args.output_dir)
 output_file = Path(output_path/f"{bench}-{class_size}-looppoint-analysis.json")
 
+with open(output_file, "w") as f:
+    json.dump({}, f)
+
 manager = LooppointAnalysisManager()
 manager.region_length = 800_000_000
 all_trackers = []
@@ -92,6 +95,7 @@ def get_data():
         "global_loop_counter" : loop_counter,
         "most_recent_loop" : most_recent_loop,
         "most_recent_loop_count" : manager.getMostRecentBackwardBranchCount(),
+        "bb_inst_map": to_hex_map(manager.getBBInstMap()),
         "locals" : []
     }
     for tracker in all_trackers:

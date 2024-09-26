@@ -21,7 +21,7 @@ benchmarks = ["bt", "cg", "ep", "ft", "is", "lu", "mg", "sp"]
 if arch == "riscv":
     gem5_bin = Path(gem5_base_path/"RISCV_MESI_Two_Level/gem5.fast")
 elif arch == "x86":
-    gem5_bin = Path(gem5_base_path/"X86_MESI_Three_Level/gem5.fast")
+    gem5_bin = Path(gem5_base_path/"X86_MESI_Two_Level/gem5.fast")
 elif arch == "arm":
     gem5_bin = Path(gem5_base_path/"ARM_CHI/gem5.fast")
 
