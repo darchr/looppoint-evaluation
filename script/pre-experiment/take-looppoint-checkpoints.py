@@ -87,7 +87,7 @@ for core in board.get_processor().get_cores():
     all_trackers.append(tracker)
 
 def convert_c_pc_count_pair_to_python(c_pc_count_pair):
-    return PcCountPair(c_pc_count_pair.getPC(), c_pc_count_pair.getCount())
+    return PcCountPair(c_pc_count_pair.get_pc(), c_pc_count_pair.get_count())
 
 def reached_marker():
     print("reached marker")
@@ -95,7 +95,7 @@ def reached_marker():
     print(current_pc_count_pairs)
     print(f"region id: {region_marker_map[current_pc_count_pairs]}")
     target_pairs.remove(current_pc_count_pairs)
-    m5.checkpoint(Path(f"{args.output_dir}/{bench}-{region_marker_map[current_pc_count_pairs]}-cpt"))
+    m5.checkpoint(Path(f"{args.output_dir}/{bench}-{region_marker_map[current_pc_count_pairs]}-cpt").as_posix())
     print(f"remaining targets: {len(target_pairs)}")
     if len(target_pairs) == 0:
         print("All markers reached")

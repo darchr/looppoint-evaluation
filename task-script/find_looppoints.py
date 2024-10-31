@@ -153,7 +153,8 @@ benchmarks = ["cg", "ft", "is", "ep", "mg", "sp"]
 # bt lu have not finished yet
 archs = ["x86", "arm"]
 m5out_dir = Path(Path().cwd()/"m5outs/looppoint-analysis")
-num_clusters = 10
+num_clusters = 30
+num_projections = 100
 clustered_data = {}
 looppoint_markers = {}
 
@@ -165,15 +166,20 @@ for arch in archs:
         with open(bench_m5out_dir, "r") as f:
             all_data = json.load(f)
         all_bbvs = form_bbvs_for_workload(bench_m5out_dir)
-        projected_all_bbvs = random_linear_projection(all_bbvs, 10)
-        clustered_data[arch][bench] = cluster_bbvs(projected_all_bbvs, num_clusters)
+        projected_all_bbvs = random_linear_projection(all_bbvs, num_projections)
+        bench_clusters = num_clusters
+        while bench_clusters * 4 > len(all_bbvs):
+            bench_clusters -= 5
+        if bench_clusters <= 0:
+            raise RuntimeError(f"Error: {bench} has too few regions to cluster")
+        clustered_data[arch][bench] = cluster_bbvs(projected_all_bbvs, bench_clusters)
         rep_rids = clustered_data[arch][bench]["rep_rid"].values()
         bench_markers = {}
         for rid in rep_rids:
             marker = find_marker_for_rid(rid, all_data)
             bench_markers[rid] = marker
         looppoint_markers[arch][bench] = bench_markers
-        print(f"Finished {arch} {bench}")
+        print(f"Finished {arch} {bench} with {bench_clusters} clusters")
 
 with open("clustered_data.json", "w") as f:
     json.dump(clustered_data, f, indent=4)    
