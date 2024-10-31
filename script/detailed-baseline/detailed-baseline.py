@@ -41,8 +41,15 @@ elif args.arch == "x86":
     workload = get_x86_npb_workload(bench, class_size, start_from_workload_checkpoint=True)
     board = get_detailed_board()
 
-def handel_workend():
-    print("Encounter workend event, dump the stats.")
+max_tick = 1000_000_000_000
+
+def handle_workend():
+    print(f"Encounter workend event, dump the stats. Current ticks: {m5.curTick()}.")
+    m5.stats.dump()
+    yield False
+
+def handle_max_tick():
+    print(f"Encounter max tick event, dump the stats. Current ticks: {m5.curTick()}.")
     m5.stats.dump()
     yield False
 
@@ -51,9 +58,11 @@ board.set_workload(workload)
 simulator = Simulator(
     board=board,
     on_exit_event={
-        ExitEvent.WORKEND:handel_workend()
-})
+        ExitEvent.WORKEND:handle_workend(),
+        ExitEvent.MAX_TICK:handle_max_tick()
+}
+)
 
-simulator.run()
+simulator.run(max_tick)
 
 print("Simulation finished!")

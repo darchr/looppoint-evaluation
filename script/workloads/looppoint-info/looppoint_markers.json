@@ -1,0 +1,990 @@
+{
+    "x86": {
+        "cg": {
+            "329": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 8882202906,
+                "start_pc": "0x405ac2",
+                "start_count": 6646,
+                "end_pc": "0x4069b1",
+                "end_count": 42417518
+            },
+            "529": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 14287458298,
+                "start_pc": "0x4069b1",
+                "start_count": 28134244,
+                "end_pc": "0x4069b1",
+                "end_count": 56259656
+            },
+            "494": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 13344230016,
+                "start_pc": "0x405ac2",
+                "start_count": 6993190,
+                "end_pc": "0x4069b1",
+                "end_count": 42500581
+            },
+            "950": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 25675579266,
+                "start_pc": "0x405ac2",
+                "start_count": 1076833,
+                "end_pc": "0x4032fa",
+                "end_count": 1
+            },
+            "797": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 21537135235,
+                "start_pc": "0x4069b1",
+                "start_count": 28134239,
+                "end_pc": "0x405ac2",
+                "end_count": 3188949
+            },
+            "151": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 4068027386,
+                "start_pc": "0x4069b1",
+                "start_count": 28134279,
+                "end_pc": "0x405ac2",
+                "end_count": 11874063
+            },
+            "380": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 10261728434,
+                "start_pc": "0x405ac2",
+                "start_count": 8808031,
+                "end_pc": "0x4069b1",
+                "end_count": 42500250
+            },
+            "646": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 17454744514,
+                "start_pc": "0x405ac2",
+                "start_count": 5085873,
+                "end_pc": "0x4069b1",
+                "end_count": 42500636
+            },
+            "911": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 24619813555,
+                "start_pc": "0x4069b1",
+                "start_count": 28134251,
+                "end_pc": "0x405ac2",
+                "end_count": 1550832
+            },
+            "265": {
+                "warmup_pc": "0x4069b1",
+                "warmup_count": 7150700287,
+                "start_pc": "0x4069b1",
+                "start_count": 28134307,
+                "end_pc": "0x405ac2",
+                "end_count": 10230538
+            }
+        },
+        "ft": {
+            "168": {
+                "warmup_pc": "0x40b618",
+                "warmup_count": 2985494679,
+                "start_pc": "0x40b618",
+                "start_count": 20072447,
+                "end_pc": "0x40a54f",
+                "end_count": 2513960
+            },
+            "164": {
+                "warmup_pc": "0x40b618",
+                "warmup_count": 2921353069,
+                "start_pc": "0x406904",
+                "start_count": 3850776,
+                "end_pc": "0x40b618",
+                "end_count": 23963420
+            },
+            "69": {
+                "warmup_pc": "0x40c590",
+                "warmup_count": 81664446,
+                "start_pc": "0x40b618",
+                "start_count": 17341478,
+                "end_pc": "0x40c590",
+                "end_count": 7748642
+            },
+            "4": {
+                "warmup_pc": "0x405f94",
+                "warmup_count": 12805057,
+                "start_pc": "0x40c83c",
+                "start_count": 3260928,
+                "end_pc": "0x40c83c",
+                "end_count": 50257261
+            },
+            "354": {
+                "warmup_pc": "0x40b618",
+                "warmup_count": 6422863846,
+                "start_pc": "0x40b618",
+                "start_count": 20101938,
+                "end_pc": "0x40b618",
+                "end_count": 40169410
+            },
+            "254": {
+                "warmup_pc": "0x40c590",
+                "warmup_count": 362145474,
+                "start_pc": "0x40b618",
+                "start_count": 17410971,
+                "end_pc": "0x406904",
+                "end_count": 4903209
+            },
+            "391": {
+                "warmup_pc": "0x40b618",
+                "warmup_count": 7108762971,
+                "start_pc": "0x40c590",
+                "start_count": 3880381,
+                "end_pc": "0x40a54f",
+                "end_count": 70215
+            },
+            "0": {
+                "warmup_pc": null,
+                "warmup_count": 0,
+                "start_pc": null,
+                "start_count": 0,
+                "end_pc": "0x405f3f",
+                "end_count": 4268349
+            },
+            "278": {
+                "warmup_pc": "0x40b618",
+                "warmup_count": 5023804509,
+                "start_pc": "0x406904",
+                "start_count": 11186568,
+                "end_pc": "0x40b618",
+                "end_count": 24793746
+            },
+            "277": {
+                "warmup_pc": "0x40b618",
+                "warmup_count": 5006487323,
+                "start_pc": "0x40b618",
+                "start_count": 17317186,
+                "end_pc": "0x406904",
+                "end_count": 11186568
+            }
+        },
+        "is": {
+            "13": {
+                "warmup_pc": "0x402dd6",
+                "warmup_count": 168141301,
+                "start_pc": "0x403108",
+                "start_count": 171813,
+                "end_pc": "0x40286f",
+                "end_count": 21019727
+            },
+            "10": {
+                "warmup_pc": "0x403108",
+                "warmup_count": 131123618,
+                "start_pc": "0x402dd6",
+                "start_count": 9144618,
+                "end_pc": "0x403108",
+                "end_count": 17854283
+            },
+            "9": {
+                "warmup_pc": "0x402dd6",
+                "warmup_count": 118583702,
+                "start_pc": "0x403108",
+                "start_count": 30460316,
+                "end_pc": "0x402dd6",
+                "end_count": 24778666
+            },
+            "22": {
+                "warmup_pc": "0x40286f",
+                "warmup_count": 333519909,
+                "start_pc": "0x402dd6",
+                "start_count": 31933779,
+                "end_pc": "0x4033ea",
+                "end_count": 8
+            },
+            "14": {
+                "warmup_pc": "0x403108",
+                "warmup_count": 167943979,
+                "start_pc": "0x40286f",
+                "start_count": 21019727,
+                "end_pc": "0x402dd6",
+                "end_count": 24926946
+            },
+            "6": {
+                "warmup_pc": "0x40286f",
+                "warmup_count": 90782011,
+                "start_pc": "0x402dd6",
+                "start_count": 26695888,
+                "end_pc": "0x40286f",
+                "end_count": 20391188
+            },
+            "3": {
+                "warmup_pc": "0x403108",
+                "warmup_count": 17927481,
+                "start_pc": "0x402dd6",
+                "start_count": 2138056,
+                "end_pc": "0x403108",
+                "end_count": 18273657
+            },
+            "11": {
+                "warmup_pc": "0x402dd6",
+                "warmup_count": 143362368,
+                "start_pc": "0x403108",
+                "start_count": 14760167,
+                "end_pc": "0x402dd6",
+                "end_count": 24778933
+            },
+            "8": {
+                "warmup_pc": "0x40286f",
+                "warmup_count": 111173199,
+                "start_pc": "0x402dd6",
+                "start_count": 17920389,
+                "end_pc": "0x403108",
+                "end_count": 30460316
+            },
+            "7": {
+                "warmup_pc": "0x402dd6",
+                "warmup_count": 93804764,
+                "start_pc": "0x40286f",
+                "start_count": 10509891,
+                "end_pc": "0x402dd6",
+                "end_count": 24778938
+            }
+        },
+        "ep": {
+            "21": {
+                "warmup_pc": "0x404473",
+                "warmup_count": 83078351,
+                "start_pc": "0x404209",
+                "start_count": 10724636,
+                "end_pc": "0x404466",
+                "end_count": 10548323
+            },
+            "0": {
+                "warmup_pc": null,
+                "warmup_count": 0,
+                "start_pc": null,
+                "start_count": 0,
+                "end_pc": "0x404473",
+                "end_count": 4097092
+            },
+            "202": {
+                "warmup_pc": "0x404466",
+                "warmup_count": 1063356216,
+                "start_pc": "0x404209",
+                "start_count": 10571370,
+                "end_pc": "0x4040e8",
+                "end_count": 8
+            },
+            "158": {
+                "warmup_pc": "0x404473",
+                "warmup_count": 652344852,
+                "start_pc": "0x404529",
+                "start_count": 4158964,
+                "end_pc": "0x404209",
+                "end_count": 21099552
+            },
+            "118": {
+                "warmup_pc": "0x404466",
+                "warmup_count": 618928951,
+                "start_pc": "0x404473",
+                "start_count": 4157991,
+                "end_pc": "0x404529",
+                "end_count": 8315543
+            },
+            "69": {
+                "warmup_pc": "0x404529",
+                "warmup_count": 282547051,
+                "start_pc": "0x404209",
+                "start_count": 10526290,
+                "end_pc": "0x404473",
+                "end_count": 8258750
+            },
+            "144": {
+                "warmup_pc": "0x404466",
+                "warmup_count": 756501549,
+                "start_pc": "0x404466",
+                "start_count": 5282552,
+                "end_pc": "0x404473",
+                "end_count": 8294204
+            },
+            "146": {
+                "warmup_pc": "0x404473",
+                "warmup_count": 602479150,
+                "start_pc": "0x404466",
+                "start_count": 5281513,
+                "end_pc": "0x404209",
+                "end_count": 21179809
+            },
+            "58": {
+                "warmup_pc": "0x404209",
+                "warmup_count": 603586655,
+                "start_pc": "0x404209",
+                "start_count": 10583614,
+                "end_pc": "0x404466",
+                "end_count": 10578376
+            },
+            "28": {
+                "warmup_pc": "0x404473",
+                "warmup_count": 112152811,
+                "start_pc": "0x404209",
+                "start_count": 10538610,
+                "end_pc": "0x404529",
+                "end_count": 8323224
+            }
+        },
+        "mg": {
+            "14": {
+                "warmup_pc": "0x40d333",
+                "warmup_count": 30425442,
+                "start_pc": "0x40f511",
+                "start_count": 1804554,
+                "end_pc": "0x40abf3",
+                "end_count": 72345
+            },
+            "36": {
+                "warmup_pc": "0x40f265",
+                "warmup_count": 190503939,
+                "start_pc": "0x40f511",
+                "start_count": 6517886,
+                "end_pc": "0x40d333",
+                "end_count": 8851213
+            },
+            "68": {
+                "warmup_pc": "0x40f511",
+                "warmup_count": 360042612,
+                "start_pc": "0x40f99d",
+                "start_count": 7783150,
+                "end_pc": "0x40fb5a",
+                "end_count": 8
+            },
+            "19": {
+                "warmup_pc": "0x40ecbf",
+                "warmup_count": 12319508,
+                "start_pc": "0x40f511",
+                "start_count": 3034060,
+                "end_pc": "0x40d661",
+                "end_count": 51171
+            },
+            "28": {
+                "warmup_pc": "0x40d333",
+                "warmup_count": 76326894,
+                "start_pc": "0x40ed79",
+                "start_count": 773695,
+                "end_pc": "0x40f265",
+                "end_count": 11951567
+            },
+            "67": {
+                "warmup_pc": "0x40f265",
+                "warmup_count": 361509404,
+                "start_pc": "0x40f511",
+                "start_count": 1583664,
+                "end_pc": "0x40f99d",
+                "end_count": 7783150
+            },
+            "1": {
+                "warmup_pc": null,
+                "warmup_count": 0,
+                "start_pc": "0x40f99d",
+                "start_count": 6250616,
+                "end_pc": "0x40b017",
+                "end_count": 340091
+            },
+            "55": {
+                "warmup_pc": "0x40f511",
+                "warmup_count": 291106780,
+                "start_pc": "0x40d661",
+                "start_count": 10931,
+                "end_pc": "0x40f511",
+                "end_count": 13005041
+            },
+            "17": {
+                "warmup_pc": "0x40f265",
+                "warmup_count": 87452286,
+                "start_pc": "0x40d333",
+                "start_count": 6985903,
+                "end_pc": "0x40ecbf",
+                "end_count": 445001
+            },
+            "10": {
+                "warmup_pc": "0x40f511",
+                "warmup_count": 46950502,
+                "start_pc": "0x40d333",
+                "start_count": 3384079,
+                "end_pc": "0x40f511",
+                "end_count": 12167913
+            }
+        },
+        "sp": {
+            "279": {
+                "warmup_pc": "0x4142a2",
+                "warmup_count": 73811469,
+                "start_pc": "0x421b7f",
+                "start_count": 786625,
+                "end_pc": "0x41b8f2",
+                "end_count": 348706
+            },
+            "470": {
+                "warmup_pc": "0x41f96d",
+                "warmup_count": 126353142,
+                "start_pc": "0x41b066",
+                "start_count": 581886,
+                "end_pc": "0x4142a2",
+                "end_count": 456286
+            },
+            "345": {
+                "warmup_pc": "0x417b43",
+                "warmup_count": 91400448,
+                "start_pc": "0x413497",
+                "start_count": 393683,
+                "end_pc": "0x41e03c",
+                "end_count": 155297
+            },
+            "584": {
+                "warmup_pc": "0x41c268",
+                "warmup_count": 167508590,
+                "start_pc": "0x41f96d",
+                "start_count": 105327,
+                "end_pc": "0x419a49",
+                "end_count": 433272
+            },
+            "805": {
+                "warmup_pc": "0x419a49",
+                "warmup_count": 108395254,
+                "start_pc": "0x414623",
+                "start_count": 231219,
+                "end_pc": "0x421b7f",
+                "end_count": 367317
+            },
+            "306": {
+                "warmup_pc": "0x421b7f",
+                "warmup_count": 81991407,
+                "start_pc": "0x41b8f2",
+                "start_count": 447978,
+                "end_pc": "0x4179fc",
+                "end_count": 528896
+            },
+            "271": {
+                "warmup_pc": "0x4179fc",
+                "warmup_count": 72005160,
+                "start_pc": "0x41287b",
+                "start_count": 413325,
+                "end_pc": "0x41ddbc",
+                "end_count": 802864
+            },
+            "1226": {
+                "warmup_pc": "0x414623",
+                "warmup_count": 326681965,
+                "start_pc": "0x41ddbc",
+                "start_count": 416731,
+                "end_pc": "0x41a62d",
+                "end_count": 345483
+            },
+            "270": {
+                "warmup_pc": "0x41a62d",
+                "warmup_count": 71386925,
+                "start_pc": "0x4179fc",
+                "start_count": 725137,
+                "end_pc": "0x41287b",
+                "end_count": 413325
+            },
+            "843": {
+                "warmup_pc": "0x4148df",
+                "warmup_count": 228295582,
+                "start_pc": "0x421b7f",
+                "start_count": 110399,
+                "end_pc": "0x41f96d",
+                "end_count": 395327
+            }
+        }
+    },
+    "arm": {
+        "cg": {
+            "900": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 24295552340,
+                "start_pc": "0x405aec",
+                "start_count": 28100463,
+                "end_pc": "0x405aec",
+                "end_count": 42452241
+            },
+            "496": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 13371163905,
+                "start_pc": "0x405aec",
+                "start_count": 28100440,
+                "end_pc": "0x405aec",
+                "end_count": 56199901
+            },
+            "152": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 4091134520,
+                "start_pc": "0x404e54",
+                "start_count": 6813369,
+                "end_pc": "0x405aec",
+                "end_count": 42452184
+            },
+            "951": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 25673497137,
+                "start_pc": "0x405aec",
+                "start_count": 28100448,
+                "end_pc": "0x40296c",
+                "end_count": 1
+            },
+            "482": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 13005346707,
+                "start_pc": "0x404e54",
+                "start_count": 10778760,
+                "end_pc": "0x405aec",
+                "end_count": 42452272
+            },
+            "481": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 12977246273,
+                "start_pc": "0x405aec",
+                "start_count": 28100434,
+                "end_pc": "0x404e54",
+                "end_count": 10778760
+            },
+            "317": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 8548240422,
+                "start_pc": "0x404e54",
+                "start_count": 8795914,
+                "end_pc": "0x405aec",
+                "end_count": 42451927
+            },
+            "519": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 14003632398,
+                "start_pc": "0x405aec",
+                "start_count": 28100459,
+                "end_pc": "0x404e54",
+                "end_count": 9059598
+            },
+            "241": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 6495466493,
+                "start_pc": "0x404e54",
+                "start_count": 12232767,
+                "end_pc": "0x405aec",
+                "end_count": 42452258
+            },
+            "240": {
+                "warmup_pc": "0x405aec",
+                "warmup_count": 6467365998,
+                "start_pc": "0x405aec",
+                "start_count": 28100495,
+                "end_pc": "0x404e54",
+                "end_count": 12232767
+            }
+        },
+        "ft": {
+            "139": {
+                "warmup_pc": "0x409d30",
+                "warmup_count": 2618043942,
+                "start_pc": "0x409d30",
+                "start_count": 20994016,
+                "end_pc": "0x409d30",
+                "end_count": 41989584
+            },
+            "390": {
+                "warmup_pc": "0x409d30",
+                "warmup_count": 7531586310,
+                "start_pc": "0x405904",
+                "start_count": 1044846,
+                "end_pc": "0x409d30",
+                "end_count": 25030153
+            },
+            "82": {
+                "warmup_pc": "0x409d30",
+                "warmup_count": 1514622501,
+                "start_pc": "0x409d30",
+                "start_count": 20155444,
+                "end_pc": "0x409d30",
+                "end_count": 39168386
+            },
+            "161": {
+                "warmup_pc": "0x409d30",
+                "warmup_count": 3048854983,
+                "start_pc": "0x409d30",
+                "start_count": 20996155,
+                "end_pc": "0x409d30",
+                "end_count": 41992290
+            },
+            "47": {
+                "warmup_pc": "0x409d30",
+                "warmup_count": 827234383,
+                "start_pc": "0x405904",
+                "start_count": 9021181,
+                "end_pc": "0x409d30",
+                "end_count": 25663959
+            },
+            "1": {
+                "warmup_pc": null,
+                "warmup_count": 0,
+                "start_pc": "0x405010",
+                "start_count": 5780733,
+                "end_pc": "0x40506c",
+                "end_count": 5780735
+            },
+            "3": {
+                "warmup_pc": "0x40506c",
+                "warmup_count": 11561462,
+                "start_pc": "0x40b020",
+                "start_count": 4337828,
+                "end_pc": "0x40b020",
+                "end_count": 48724106
+            },
+            "155": {
+                "warmup_pc": "0x405904",
+                "warmup_count": 102824316,
+                "start_pc": "0x4089ec",
+                "start_count": 507404,
+                "end_pc": "0x409d30",
+                "end_count": 28858812
+            },
+            "412": {
+                "warmup_pc": "0x409d30",
+                "warmup_count": 7961372665,
+                "start_pc": "0x405904",
+                "start_count": 13716520,
+                "end_pc": "0x409d30",
+                "end_count": 26057353
+            },
+            "132": {
+                "warmup_pc": "0x409d30",
+                "warmup_count": 2489067661,
+                "start_pc": "0x409d30",
+                "start_count": 19016505,
+                "end_pc": "0x405904",
+                "end_count": 12892309
+            }
+        },
+        "is": {
+            "12": {
+                "warmup_pc": "0x402cac",
+                "warmup_count": 163749529,
+                "start_pc": "0x4027d0",
+                "start_count": 11106503,
+                "end_pc": "0x402cac",
+                "end_count": 20927409
+            },
+            "1": {
+                "warmup_pc": null,
+                "warmup_count": 0,
+                "start_pc": "0x402cac",
+                "start_count": 7312613,
+                "end_pc": "0x402fbc",
+                "end_count": 14337300
+            },
+            "11": {
+                "warmup_pc": "0x4027d0",
+                "warmup_count": 159944994,
+                "start_pc": "0x402cac",
+                "start_count": 29531801,
+                "end_pc": "0x4027d0",
+                "end_count": 18933669
+            },
+            "21": {
+                "warmup_pc": "0x402cac",
+                "warmup_count": 283822810,
+                "start_pc": "0x402fbc",
+                "start_count": 26677720,
+                "end_pc": "0x402cac",
+                "end_count": 20927410
+            },
+            "9": {
+                "warmup_pc": "0x402cac",
+                "warmup_count": 106458481,
+                "start_pc": "0x403214",
+                "start_count": 1402649,
+                "end_pc": "0x4027d0",
+                "end_count": 25727266
+            },
+            "10": {
+                "warmup_pc": "0x403214",
+                "warmup_count": 7691033,
+                "start_pc": "0x4027d0",
+                "start_count": 25727266,
+                "end_pc": "0x402cac",
+                "end_count": 29531801
+            },
+            "13": {
+                "warmup_pc": "0x4027d0",
+                "warmup_count": 178878663,
+                "start_pc": "0x402cac",
+                "start_count": 16904778,
+                "end_pc": "0x402fbc",
+                "end_count": 28990873
+            },
+            "23": {
+                "warmup_pc": "0x402cac",
+                "warmup_count": 304750220,
+                "start_pc": "0x402fbc",
+                "start_count": 7561563,
+                "end_pc": "0x403258",
+                "end_count": 8
+            },
+            "7": {
+                "warmup_pc": "0x402cac",
+                "warmup_count": 85531071,
+                "start_pc": "0x402fbc",
+                "start_count": 31301959,
+                "end_pc": "0x402cac",
+                "end_count": 20927410
+            },
+            "15": {
+                "warmup_pc": "0x402fbc",
+                "warmup_count": 196763033,
+                "start_pc": "0x402cac",
+                "start_count": 4277759,
+                "end_pc": "0x402fbc",
+                "end_count": 14364811
+            }
+        },
+        "ep": {
+            "149": {
+                "warmup_pc": "0x403a40",
+                "warmup_count": 833517533,
+                "start_pc": "0x403abc",
+                "start_count": 4454238,
+                "end_pc": "0x403abc",
+                "end_count": 8845691
+            },
+            "11": {
+                "warmup_pc": "0x403a48",
+                "warmup_count": 44163588,
+                "start_pc": "0x403810",
+                "start_count": 11262023,
+                "end_pc": "0x403abc",
+                "end_count": 8910480
+            },
+            "162": {
+                "warmup_pc": "0x403a48",
+                "warmup_count": 712209673,
+                "start_pc": "0x403810",
+                "start_count": 11513175,
+                "end_pc": "0x403a48",
+                "end_count": 8820906
+            },
+            "74": {
+                "warmup_pc": "0x403810",
+                "warmup_count": 822966631,
+                "start_pc": "0x403810",
+                "start_count": 11050839,
+                "end_pc": "0x403a40",
+                "end_count": 11338595
+            },
+            "128": {
+                "warmup_pc": "0x403a48",
+                "warmup_count": 561761173,
+                "start_pc": "0x403810",
+                "start_count": 11225222,
+                "end_pc": "0x403810",
+                "end_count": 22245034
+            },
+            "147": {
+                "warmup_pc": "0x403a48",
+                "warmup_count": 645831965,
+                "start_pc": "0x403a40",
+                "start_count": 5613266,
+                "end_pc": "0x403a40",
+                "end_count": 11263653
+            },
+            "41": {
+                "warmup_pc": "0x403a48",
+                "warmup_count": 176915850,
+                "start_pc": "0x403a40",
+                "start_count": 5590640,
+                "end_pc": "0x403810",
+                "end_count": 22944756
+            },
+            "90": {
+                "warmup_pc": "0x403810",
+                "warmup_count": 1003129176,
+                "start_pc": "0x403810",
+                "start_count": 10953523,
+                "end_pc": "0x403abc",
+                "end_count": 8883491
+            },
+            "190": {
+                "warmup_pc": "0x403a48",
+                "warmup_count": 836052253,
+                "start_pc": "0x403810",
+                "start_count": 11303880,
+                "end_pc": "0x40373c",
+                "end_count": 8
+            },
+            "18": {
+                "warmup_pc": "0x403a48",
+                "warmup_count": 75155253,
+                "start_pc": "0x403abc",
+                "start_count": 4390320,
+                "end_pc": "0x403810",
+                "end_count": 22586787
+            }
+        },
+        "mg": {
+            "21": {
+                "warmup_pc": "0x40b21c",
+                "warmup_count": 45711224,
+                "start_pc": "0x40ce3c",
+                "start_count": 5697725,
+                "end_pc": "0x40b21c",
+                "end_count": 3873280
+            },
+            "47": {
+                "warmup_pc": "0x409258",
+                "warmup_count": 14108661,
+                "start_pc": "0x40cc5c",
+                "start_count": 7368804,
+                "end_pc": "0x40b21c",
+                "end_count": 7126954
+            },
+            "78": {
+                "warmup_pc": "0x40c7c4",
+                "warmup_count": 45165687,
+                "start_pc": "0x40ce3c",
+                "start_count": 1617357,
+                "end_pc": "0x40b21c",
+                "end_count": 1685650
+            },
+            "81": {
+                "warmup_pc": "0x40cc5c",
+                "warmup_count": 362757158,
+                "start_pc": "0x40d224",
+                "start_count": 1104539,
+                "end_pc": "0x40d358",
+                "end_count": 8
+            },
+            "61": {
+                "warmup_pc": "0x40b21c",
+                "warmup_count": 144361030,
+                "start_pc": "0x40ce3c",
+                "start_count": 7669856,
+                "end_pc": "0x409730",
+                "end_count": 1049972
+            },
+            "24": {
+                "warmup_pc": "0x40cc5c",
+                "warmup_count": 106494312,
+                "start_pc": "0x40b21c",
+                "start_count": 5981361,
+                "end_pc": "0x40ce3c",
+                "end_count": 8151285
+            },
+            "18": {
+                "warmup_pc": "0x40ce3c",
+                "warmup_count": 77402647,
+                "start_pc": "0x40b21c",
+                "start_count": 1023061,
+                "end_pc": "0x40ce3c",
+                "end_count": 10018524
+            },
+            "7": {
+                "warmup_pc": "0x40b46c",
+                "warmup_count": 97425,
+                "start_pc": "0x40ce3c",
+                "start_count": 5338772,
+                "end_pc": "0x40b46c",
+                "end_count": 52263
+            },
+            "79": {
+                "warmup_pc": "0x40ce3c",
+                "warmup_count": 351542061,
+                "start_pc": "0x40b21c",
+                "start_count": 465434,
+                "end_pc": "0x40cc5c",
+                "end_count": 8218287
+            },
+            "27": {
+                "warmup_pc": "0x40904c",
+                "warmup_count": 7701341,
+                "start_pc": "0x40cc5c",
+                "start_count": 6373362,
+                "end_pc": "0x40b21c",
+                "end_count": 6172287
+            }
+        },
+        "sp": {
+            "898": {
+                "warmup_pc": "0x413314",
+                "warmup_count": 231922202,
+                "start_pc": "0x4176ec",
+                "start_count": 512799,
+                "end_pc": "0x419f48",
+                "end_count": 134646
+            },
+            "443": {
+                "warmup_pc": "0x418ab4",
+                "warmup_count": 114457108,
+                "start_pc": "0x415f20",
+                "start_count": 315721,
+                "end_pc": "0x4136ec",
+                "end_count": 698272
+            },
+            "647": {
+                "warmup_pc": "0x410640",
+                "warmup_count": 165029477,
+                "start_pc": "0x418ab4",
+                "start_count": 132578,
+                "end_pc": "0x4162ec",
+                "end_count": 116962
+            },
+            "1060": {
+                "warmup_pc": "0x4136ec",
+                "warmup_count": 270390275,
+                "start_pc": "0x410260",
+                "start_count": 490308,
+                "end_pc": "0x41b560",
+                "end_count": 762455
+            },
+            "897": {
+                "warmup_pc": "0x4162ec",
+                "warmup_count": 229224186,
+                "start_pc": "0x413314",
+                "start_count": 922202,
+                "end_pc": "0x4176ec",
+                "end_count": 512799
+            },
+            "268": {
+                "warmup_pc": "0x411140",
+                "warmup_count": 68881208,
+                "start_pc": "0x418cfc",
+                "start_count": 826667,
+                "end_pc": "0x4162ec",
+                "end_count": 561773
+            },
+            "1026": {
+                "warmup_pc": "0x410980",
+                "warmup_count": 266895689,
+                "start_pc": "0x41bb38",
+                "start_count": 407746,
+                "end_pc": "0x419f48",
+                "end_count": 782856
+            },
+            "1099": {
+                "warmup_pc": "0x413524",
+                "warmup_count": 280708942,
+                "start_pc": "0x410478",
+                "start_count": 904314,
+                "end_pc": "0x418ab4",
+                "end_count": 499237
+            },
+            "427": {
+                "warmup_pc": "0x41bb38",
+                "warmup_count": 109138157,
+                "start_pc": "0x41a1b8",
+                "start_count": 581501,
+                "end_pc": "0x416a4c",
+                "end_count": 412002
+            },
+            "374": {
+                "warmup_pc": "0x41aae4",
+                "warmup_count": 96520309,
+                "start_pc": "0x41269c",
+                "start_count": 2304,
+                "end_pc": "0x410478",
+                "end_count": 592627
+            }
+        }
+    }
+}

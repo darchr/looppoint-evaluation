@@ -26,26 +26,20 @@ if args.arch == "arm":
     requires(isa_required=ISA.ARM, coherence_protocol_required=CoherenceProtocol.CHI)
     from script.boards.arm_board import *
     from script.workloads.workloads import get_arm_npb_workload
-    workload = get_arm_npb_workload(bench, class_size, start_from_after_boot_checkpoint=True)
+    workload = get_arm_npb_workload(bench, class_size, start_from_workload_checkpoint=True)
     board = get_detailed_board()
 elif args.arch == "riscv":
     requires(isa_required=ISA.RISCV, coherence_protocol_required=CoherenceProtocol.MESI_TWO_LEVEL)
     from script.boards.riscv_board import *
     from script.workloads.workloads import get_riscv_npb_workload
-    workload = get_riscv_npb_workload(bench, class_size, start_from_after_boot_checkpoint=True)
+    workload = get_riscv_npb_workload(bench, class_size, start_from_workload_checkpoint=True)
     board = get_detailed_board()
 elif args.arch == "x86":
     requires(isa_required=ISA.X86, coherence_protocol_required=CoherenceProtocol.MESI_THREE_LEVEL)
     from script.boards.x86_board import *
     from script.workloads.workloads import get_x86_npb_workload
-    workload = get_x86_npb_workload(bench, class_size, start_from_after_boot_checkpoint=True)
+    workload = get_x86_npb_workload(bench, class_size, start_from_workload_checkpoint=True)
     board = get_detailed_board()
-
-def handel_workbegin():
-    print("Encounter workbegin event, reset and dump the stats.")
-    m5.stats.dump()
-    m5.stats.reset()
-    yield False
 
 def handel_workend():
     print("Encounter workend event, dump the stats.")
