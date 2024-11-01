@@ -90,18 +90,19 @@ def convert_c_pc_count_pair_to_python(c_pc_count_pair):
     return PcCountPair(c_pc_count_pair.get_pc(), c_pc_count_pair.get_count())
 
 def reached_marker():
-    print("reached marker")
-    current_pc_count_pairs = convert_c_pc_count_pair_to_python(tracker_manager.getCurrentPcCountPair())
-    print(current_pc_count_pairs)
-    print(f"region id: {region_marker_map[current_pc_count_pairs]}")
-    target_pairs.remove(current_pc_count_pairs)
-    m5.checkpoint(Path(f"{args.output_dir}/{bench}-{region_marker_map[current_pc_count_pairs]}-cpt").as_posix())
-    print(f"remaining targets: {len(target_pairs)}")
-    if len(target_pairs) == 0:
-        print("All markers reached")
-        yield True
-    else:
-        yield False
+    while True:
+        print("reached marker")
+        current_pc_count_pairs = convert_c_pc_count_pair_to_python(tracker_manager.getCurrentPcCountPair())
+        print(current_pc_count_pairs)
+        print(f"region id: {region_marker_map[current_pc_count_pairs]}")
+        target_pairs.remove(current_pc_count_pairs)
+        m5.checkpoint(Path(f"{args.output_dir}/{bench}-{region_marker_map[current_pc_count_pairs]}-cpt").as_posix())
+        print(f"remaining targets: {len(target_pairs)}")
+        if len(target_pairs) == 0:
+            print("All markers reached")
+            yield True
+        else:
+            yield False
 
 board.set_workload(workload)
 
