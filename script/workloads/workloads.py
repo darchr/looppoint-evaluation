@@ -6,7 +6,7 @@ file_path = Path(__file__).resolve().parent
 disk_image_base_path = Path(file_path/"../../gem5-resources/src/looppoint-use-disk/")
 checkpoint_base_path = Path(file_path/"checkpoints")
 
-def get_arm_npb_workload(workload_name = None, class_size = None, obtain_process_maps = False, start_from_after_boot_checkpoint = False, start_from_workload_checkpoint = False):
+def get_arm_npb_workload(workload_name = None, class_size = None, obtain_process_maps = False, start_from_after_boot_checkpoint = False, start_from_workload_checkpoint = False, start_from_rid_checkpoint = -1):
     workload = WorkloadResource(
         function = "set_kernel_disk_workload",
         parameters = {
@@ -21,6 +21,8 @@ def get_arm_npb_workload(workload_name = None, class_size = None, obtain_process
         workload.set_parameter("readfile_contents", f"LD_LIBRARY_PATH=/home/gem5/NPB3.4-OMP/common/aarch64-unknown-linux-gnu OMP_NUM_THREADS=8 /home/gem5/NPB3.4-OMP/{workload_name.upper()}/{class_size}/c_m5_fs_naive/aarch64/*.c_m5_fs_naive;")
         if start_from_workload_checkpoint:
             workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"workload-cpts/arm-{workload_name}-{class_size}-cpt"))
+        if start_from_rid_checkpoint > -1:
+            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"looppoint-cpts/arm/{workload_name}-{start_from_rid_checkpoint}-cpt"))
     if obtain_process_maps:
         workload.set_parameter("readfile_contents",
 f"""#!/bin/bash
@@ -49,7 +51,7 @@ m5 exit
                                 )
     return workload
 
-def get_x86_npb_workload(workload_name = None, class_size = None, obtain_process_maps = False, start_from_after_boot_checkpoint = False, start_from_workload_checkpoint = False):
+def get_x86_npb_workload(workload_name = None, class_size = None, obtain_process_maps = False, start_from_after_boot_checkpoint = False, start_from_workload_checkpoint = False, start_from_rid_checkpoint= -1):
     workload =  WorkloadResource(
         function = "set_kernel_disk_workload",
         parameters = {
@@ -69,6 +71,8 @@ def get_x86_npb_workload(workload_name = None, class_size = None, obtain_process
         workload.set_parameter("readfile_contents", f"LD_LIBRARY_PATH=/home/gem5/NPB3.4-OMP/common/x86_64-unknown-linux-gnu OMP_NUM_THREADS=8 /home/gem5/NPB3.4-OMP/{workload_name.upper()}/{class_size}/c_m5_fs_naive/x86_64/*.c_m5_fs_naive;")
         if start_from_workload_checkpoint:
             workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"workload-cpts/x86-{workload_name}-{class_size}-cpt"))
+        if start_from_rid_checkpoint > -1:
+            workload.set_parameter("checkpoint", Path(checkpoint_base_path/f"looppoint-cpts/x86/{workload_name}-{start_from_rid_checkpoint}-cpt"))
     if obtain_process_maps:
         workload.set_parameter("readfile_contents", 
 f"""#!/bin/bash
