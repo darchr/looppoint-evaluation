@@ -49,9 +49,10 @@ def handle_workend():
     yield False
 
 def handle_max_tick():
-    print(f"Encounter max tick event, dump the stats. Current ticks: {m5.curTick()}.")
-    m5.stats.dump()
-    yield False
+    while True:
+        print(f"Encounter max tick event, dump the stats. Current ticks: {m5.curTick()}.")
+        m5.stats.dump()
+        yield False
 
 board.set_workload(workload)
 
